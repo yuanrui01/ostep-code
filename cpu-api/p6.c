@@ -13,11 +13,11 @@ int main(int argc, char* argv[]) {
         exit(1);
     } else if (rc == 0) {
         close(STDOUT_FILENO); 
-	    open("./p5.output", O_CREAT|O_WRONLY|O_APPEND, S_IRWXU);
+	    //open("./p5.output", O_CREAT|O_WRONLY|O_APPEND, S_IRWXU);
         printf("write text from child!\n");
     } else {
         close(STDOUT_FILENO);
-        open("./p5.output", O_CREAT|O_WRONLY|O_APPEND, S_IRWXU);
+        open("./p6.output", O_CREAT|O_WRONLY|O_APPEND, S_IRWXU);
         sleep(1);
         printf("write text from parent!\n");
     }
