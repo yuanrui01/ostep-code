@@ -2,7 +2,7 @@
 #include <unistd.h>
 #include <sys/time.h>
 
-#define ITERATIONS 1000000  // 设定循环次数以取平均值
+#define ITERATIONS 10000000  // 设定循环次数以取平均值
 
 int main() {
     char buffer[128];
